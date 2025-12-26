@@ -1,0 +1,11 @@
+{
+  "name": "digital-diary",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
