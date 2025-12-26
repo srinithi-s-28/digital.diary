@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 Digital Diary - MERN Stack Application</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 3rem;
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .tech-stack {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .stack-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .stack-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stack-card h2 {
+            color: #2c3e50;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+        
+        .tech-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .tech-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .tech-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+        }
+        
+        .btn-secondary {
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            box-shadow: 0 4px 15px rgba(39, 174, 96, 0.3);
+        }
+        
+        .btn-secondary:hover {
+            box-shadow: 0 6px 20px rgba(39, 174, 96, 0.4);
+        }
+        
+        .features {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .features h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .feature-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+        }
+        
+        .feature-item h3 {
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+        
+        .demo-section {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        
+        .demo-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .tech-stack {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .demo-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📖 Digital Diary</h1>
+            <p>A full-stack MERN application for personal diary management with authentication</p>
+        </div>
+        
+        <div class="tech-stack">
+            <div class="stack-card">
+                <h2>🎨 Frontend</h2>
+                <ul class="tech-list">
+                    <li>⚛️ React.js - UI Library</li>
+                    <li>🛣️ React Router DOM - Routing</li>
+                    <li>📡 Axios - HTTP Client</li>
+                    <li>🎨 CSS3 - Modern Styling</li>
+                    <li>📱 Responsive Design</li>
+                </ul>
+                <a href="./frontend/" class="btn">🚀 View Frontend</a>
+            </div>
+            
+            <div class="stack-card">
+                <h2>⚙️ Backend</h2>
+                <ul class="tech-list">
+                    <li>🟢 Node.js - Runtime</li>
+                    <li>🚀 Express.js - Web Framework</li>
+                    <li>🍃 MongoDB - Database</li>
+                    <li>🔐 JWT - Authentication</li>
+                    <li>🔒 bcrypt - Password Hashing</li>
+                </ul>
+                <a href="./backend/" class="btn btn-secondary">🔧 View Backend</a>
+            </div>
+        </div>
+        
+        <div class="features">
+            <h2>✨ Features</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>🔐 Authentication</h3>
+                    <p>Secure user registration and login with JWT tokens</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📝 Diary Management</h3>
+                    <p>Create, edit, delete and view personal diary entries</p>
+                </div>
+                <div class="feature-item">
+                    <h3>😊 Mood Tracking</h3>
+                    <p>Track your emotions with 6 different mood options</p>
+                </div>
+                <div class="feature-item">
+                    <h3>📱 Responsive Design</h3>
+                    <p>Works perfectly on desktop and mobile devices</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="demo-section">
+            <h2 style="color: white; margin-bottom: 2rem;">🚀 Get Started</h2>
+            <div class="demo-buttons">
+                <a href="#setup" class="btn">📖 Setup Instructions</a>
+                <a href="https://github.com/yourusername/digital-diary" class="btn btn-secondary">⭐ Star on GitHub</a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        // Add some interactive animations
+        document.querySelectorAll('.stack-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

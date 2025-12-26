@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚙️ Backend - Digital Diary API</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 2rem; }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .tech-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid #27ae60;
+        }
+        .api-section {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 1rem 0;
+        }
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        .endpoint {
+            background: #27ae60;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 0.25rem;
+            font-weight: bold;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .btn:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚙️ Backend - Node.js API</h1>
+        
+        <div class="tech-grid">
+            <div class="tech-item">
+                <h3>🟢 Node.js</h3>
+                <p>JavaScript runtime environment</p>
+            </div>
+            <div class="tech-item">
+                <h3>🚀 Express.js</h3>
+                <p>Fast web framework for Node.js</p>
+            </div>
+            <div class="tech-item">
+                <h3>🍃 MongoDB</h3>
+                <p>NoSQL database with Mongoose ODM</p>
+            </div>
+            <div class="tech-item">
+                <h3>🔐 JWT</h3>
+                <p>JSON Web Tokens for authentication</p>
+            </div>
+        </div>
+        
+        <h2>📁 Project Structure</h2>
+        <div class="code-block">
+backend/
+├── config/
+│   └── db.js
+├── models/
+│   ├── User.js
+│   └── Diary.js
+├── controllers/
+│   ├── authController.js
+│   └── diaryController.js
+├── routes/
+│   ├── authRoutes.js
+│   └── diaryRoutes.js
+├── middleware/
+│   └── authMiddleware.js
+└── server.js
+        </div>
+        
+        <h2>🔗 API Endpoints</h2>
+        <div class="api-section">
+            <h3>Authentication</h3>
+            <div class="endpoint">POST /api/auth/register</div>
+            <div class="endpoint">POST /api/auth/login</div>
+        </div>
+        
+        <div class="api-section">
+            <h3>Diary Management (Protected)</h3>
+            <div class="endpoint">GET /api/diary</div>
+            <div class="endpoint">POST /api/diary</div>
+            <div class="endpoint">PUT /api/diary/:id</div>
+            <div class="endpoint">DELETE /api/diary/:id</div>
+        </div>
+        
+        <h2>🚀 Getting Started</h2>
+        <div class="code-block">
+cd backend
+npm install
+# Update .env with MongoDB connection
+npm run dev
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="../" class="btn">🏠 Back to Home</a>
+            <a href="../frontend/" class="btn">🎨 View Frontend</a>
+        </div>
+    </div>
+</body>
+</html>

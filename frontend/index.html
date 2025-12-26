@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎨 Frontend - Digital Diary</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding: 2rem;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 2rem; }
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .tech-item {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            border-left: 4px solid #3498db;
+        }
+        .code-block {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        .btn:hover { transform: translateY(-2px); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Frontend - React Application</h1>
+        
+        <div class="tech-grid">
+            <div class="tech-item">
+                <h3>⚛️ React.js</h3>
+                <p>Modern UI library with hooks and functional components</p>
+            </div>
+            <div class="tech-item">
+                <h3>🛣️ React Router</h3>
+                <p>Client-side routing with protected routes</p>
+            </div>
+            <div class="tech-item">
+                <h3>📡 Axios</h3>
+                <p>HTTP client for API communication</p>
+            </div>
+            <div class="tech-item">
+                <h3>🎨 Modern CSS</h3>
+                <p>Glass morphism, gradients, and animations</p>
+            </div>
+        </div>
+        
+        <h2>📁 Project Structure</h2>
+        <div class="code-block">
+frontend/
+├── src/
+│   ├── components/
+│   │   ├── Navbar.js
+│   │   ├── ProtectedRoute.js
+│   │   └── DiaryCard.js
+│   ├── pages/
+│   │   ├── Login.js
+│   │   ├── Register.js
+│   │   ├── Dashboard.js
+│   │   └── AddDiary.js
+│   ├── services/
+│   │   └── api.js
+│   └── styles/
+│       └── main.css
+        </div>
+        
+        <h2>🚀 Getting Started</h2>
+        <div class="code-block">
+cd frontend
+npm install
+npm start
+        </div>
+        
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="../" class="btn">🏠 Back to Home</a>
+            <a href="../backend/" class="btn">⚙️ View Backend</a>
+        </div>
+    </div>
+</body>
+</html>
