@@ -40,6 +40,7 @@ A full-stack web application for personal diary management with user authenticat
 - **Axios** - HTTP client
 - **CSS3** - Styling
 
+<<<<<<< HEAD
 ## Project Structure
 
 ```
@@ -332,3 +333,7 @@ digital-diary/
 ## License
 
 This project is open source and available under the MIT License.
+=======
+
+This project is open source and available under the MIT License.
+>>>>>>> 23b1d0199d2f70e449baf4a820eb22cd83d58e22
